@@ -10,6 +10,7 @@ Use social media data to predict the poll in betting. Hence, we can make use of 
 Project file system
 
 |--- Root
+    
     |--- raw_tweet (universal public tweets stream stored here)
         |--- year_month_day_hour_minute_second.txt
         ...
