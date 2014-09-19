@@ -40,15 +40,15 @@ Functionality Unit Test:
 
 Project file system
 
-|--- Root
-    |--- raw_tweet (universal public tweets stream stored here)
-        |--- year_month_day_hour_minute_second.txt
-        ...
-    |--- processed_data (extracted tweets stored here)
-        |--- 001.txt
-        |--- 002.txt
-        ...
-        
+    |--- Root
+        |--- raw_tweet (universal public tweets stream stored here)
+            |--- year_month_day_hour_minute_second.txt
+            ...
+        |--- processed_data (extracted tweets stored here)
+            |--- 001.txt
+            |--- 002.txt
+            ...
+            
     tweeter_public_stream.py (real-time non-stop data streaming, save data into folder "raw_tweet")
     public_stream_processer.py (real-time process "raw_tweet")
     public_poll_analysis.py (analysis the processed_data, predict the poll in "win", "draw" and "lose")
@@ -57,14 +57,13 @@ Project file system
 ==============================================================================================================
 AWS pig server Unit Test:
 
-Project file system & Mapreduce algorithm
+Project file system & Mapreduce algorithm schema
 
-|--- Master
-
-    |--- Node1
-    |--- Node2
-    ...
-    |--- Node10
+    |--- Master
+        |--- Node1
+        |--- Node2
+        ...
+        |--- Node10
 
 Map:
 
