@@ -41,11 +41,9 @@ Functionality Unit Test:
 Project file system
 
 |--- Root
-    
     |--- raw_tweet (universal public tweets stream stored here)
         |--- year_month_day_hour_minute_second.txt
         ...
-        
     |--- processed_data (extracted tweets stored here)
         |--- 001.txt
         |--- 002.txt
