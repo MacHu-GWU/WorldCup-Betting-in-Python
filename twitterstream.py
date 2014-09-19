@@ -1,10 +1,14 @@
-##coding=utf8
+##encoding=utf8
+##version =py27
+##author  =sanhe
+##date    =2013-10-01
+
 import oauth2 as oauth
 import urllib2 as urllib
 import itertools
 from datetime import datetime
 import os
-''' 设置验证信息 '''
+''' 设置验证信息 - setup authentication '''
 api_key = "i5WuCmMYP7heGYdu9vf2FcYSg"
 api_secret = "Ndk0yhckcrqYLRgmcR9L67KCQkuKh6Tp7TszHlMfL54en6LoN4"
 access_token_key = "351985670-NEXiQ7rH3xW4JsHdlS7YGmGfPjATyQgMbsBtDVJQ"
@@ -12,7 +16,7 @@ access_token_secret = "TAeaj6mpAjTG3YtLKtNPyUQvGliknzxvjgF69nkWgyA2I"
 
 _debug = 0
 
-''' 连接验证服务器 '''
+''' 连接验证服务器 - connect to tweeter server '''
 oauth_token    = oauth.Token(key=access_token_key, secret=access_token_secret)
 oauth_consumer = oauth.Consumer(key=api_key, secret=api_secret)
 
@@ -23,10 +27,7 @@ http_method = "GET"
 http_handler  = urllib.HTTPHandler(debuglevel=_debug)
 https_handler = urllib.HTTPSHandler(debuglevel=_debug)
 
-'''
-Construct, sign, and open a twitter request
-using the hard-coded credentials above.
-'''
+''' get public stream request '''
 
 def twitterreq(url, method, parameters): 
     req = oauth.Request.from_consumer_and_token(oauth_consumer, ## 建立 requests
