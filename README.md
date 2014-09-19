@@ -62,17 +62,20 @@ AWS pig server Unit Test:
 Project file system & Mapreduce algorithm
 
 |--- Master
+
     |--- Node1
     |--- Node2
     ...
     |--- Node10
 
 Map:
+
     Game ID : tweets.json = {'user ID': ...,
                              'text': ...,
                              'location': ...,
                              ...}
 
 Reduce:
+
     user ID : sentimate value
     user ID : money weight value
